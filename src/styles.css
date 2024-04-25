@@ -1,0 +1,54 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.stepper {
+  display: flex;
+  flex-direction: row;
+}
+
+.step {
+  display: flex;
+  flex-direction: column;
+}
+
+.stepnum {
+  border-radius: 50%;
+  background-color: gray;
+  width: 40px;
+  height: 30px;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px;
+  margin: 10px 40px;
+}
+
+.active .stepnum {
+  background-color: blue;
+}
+
+.complete .stepnum {
+  background-color: green;
+}
+
+.stepname {
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.progressbar {
+  position: absolute;
+  top: 25%;
+  width: 100%;
+  left: 0;
+  height: 4px;
+  background-color: #ccc;
+}
+
+.progress {
+  height: 100%;
+  background-color: green;
+  transition: 0.2s ease;
+}
